@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My HTML</title>
-</head>
+
 
 <style>
    div {
@@ -24,27 +24,32 @@
      .regular-link {
         color:lightblue
      }
-
-    em{
-        color: blue;
-     }
-     h1 em{
-        color: magenta;
-     }
-
-     em.magenta{
-        color:magenta;
-     }
-
-     #h1-css-id.more-important {
-        color:yellow;
+      #exec-bio {
+         background-color: lightgray;
+      }
+      .bio-box  {
+         border: 1px solid #000;
+      }
+      .bio-box a {
+         color: green;
+      }
+      .alert {
+         background: red;
+      }
+      #exec-bio.alert {
+         background:red;
+      }
+     h1 {
+      background: blue;
+      color:#000;
      }
 
      
     </style>
+    </head>
 <body>
 
-    <h1><em id="h1-css-id" class="emphasized-green magenta more-important" style="color:orange">I'm an h1 </em></h1>
+    <h1>I'm an h1</h1>
     <ul>
         <li><a href="https://example.com" id="special-link">Link</a></li>
         <li><a href="https://example.com" class="regular-link">Link</a></li>
@@ -52,9 +57,9 @@
     </ul>    
 
 <h2>I'm an h2</h2>
-<div><a href="https://example.com" style="color:green">I'm a link</a></div>
-<div><a href="https://example.com" style="color:green">I'm a link</a></div>
-<div><a href="https://example.com" style="color:green">I'm a link</a></div>
+<div id="exec-bio" class="bio-box"><a href="https://example.com">I'm a link</a></div>
+<div class="bio-box"><a href="https://example.com">I'm a link</a></div>
+<div class="bio-box"><a href="https://example.com">I'm a link</a></div>
 
 </body>
 </html>
